@@ -7,7 +7,7 @@ nav_exclude: true
 # Game Dev Prompt Library 
 {: .fs-9 }
 
-AI prompts for building **games for learning** in Unity 2D, made by and for grad students in Games for Learning.
+AI prompts for building **games for learning** in Unity 2D, made by and for EdTech grad students.
 {: .fs-6 .fw-300 }
 
 <a href="{% link docs/start-here.md %}"><button type="button" name="button" class="btn-neon">Start Here →</button></a>
