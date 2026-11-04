@@ -1,24 +1,194 @@
-$jtdpurple: #4e26af; // $purple-200
-$jtdpurple-lt: #5e41d0; // $purple-100
-$jtdpurple-dk: #381885; // $purple-300
+// ==========================================================
+//  NEON ARCADE THEME — custom.scss for Just the Docs
+//  Pair with `color_scheme: dark` in _config.yml
+// ==========================================================
 
-dt {
-    color: $jtdpurple;
+// ---------- Palette ----------
+$bg:          #0b0b14;   // page background
+$surface:     #12121f;   // sidebar / cards
+$surface-2:   #1a1a2e;   // raised blocks (h3 bars, dd)
+$border:      #2a2a45;
+$text:        #e6e6f0;
+$text-muted:  #9a9ab8;
+
+$neon-magenta: #ff2bd6;
+$neon-cyan:    #00f0ff;
+$neon-lime:    #39ff14;
+$neon-yellow:  #ffe600;
+$neon-red:     #ff3860;
+$neon-purple:  #b26bff;
+$neon-orange:  #ff8a00;
+
+@mixin glow($color, $strength: 8px) {
+    box-shadow: 0 0 $strength rgba($color, 0.55), 0 0 ($strength * 2.5) rgba($color, 0.2);
+}
+@mixin text-glow($color) {
+    text-shadow: 0 0 6px rgba($color, 0.7), 0 0 18px rgba($color, 0.35);
 }
 
+// ---------- Base ----------
+body,
+.main,
+.main-content-wrap {
+    background-color: $bg !important;
+    color: $text;
+}
+
+.side-bar,
+.site-header,
+.main-header,
+.site-footer {
+    background-color: $surface !important;
+    border-color: $border !important;
+}
+
+a,
+a:visited {
+    color: $neon-cyan;
+    text-decoration-color: rgba($neon-cyan, 0.4);
+}
+a:hover {
+    color: $neon-magenta;
+    text-decoration-color: $neon-magenta;
+    @include text-glow($neon-magenta);
+}
+
+::selection {
+    background: rgba($neon-magenta, 0.35);
+    color: #fff;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $neon-magenta, $neon-cyan, transparent);
+    opacity: 0.6;
+}
+
+// ---------- Navigation ----------
+.site-title {
+    color: #fff !important;
+    @include text-glow($neon-magenta);
+}
+.nav-list .nav-list-item .nav-list-link {
+    color: $text-muted !important;
+}
+.nav-list .nav-list-item .nav-list-link:hover,
+.nav-list .nav-list-item .nav-list-link.active {
+    color: $neon-cyan !important;
+    background-image: linear-gradient(-90deg, rgba($neon-cyan, 0.12) 0%, rgba($neon-cyan, 0) 100%) !important;
+}
+.search-input {
+    background-color: $surface !important;
+    color: $text !important;
+}
+.search-input:focus + .search-label .search-icon {
+    color: $neon-cyan !important;
+}
+
+// ---------- Headings ----------
+h1 {
+    color: $neon-magenta;
+    font-weight: bold;
+    @include text-glow($neon-magenta);
+}
+h2 {
+    font-weight: bold;
+    color: #fff;
+}
+h3 {
+    font-size: 1.2rem !important;
+    background-color: $surface-2;
+    border-left: 3px solid $neon-cyan;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+}
+h4 {
+    font-size: 1rem !important;
+    font-weight: bold;
+    color: $neon-lime;
+}
+h5 {
+    color: $neon-cyan !important;
+}
+
+// ---------- Inline text ----------
+.highlighter {
+    background-color: rgba($neon-yellow, 0.18);
+    color: #fff7b0;
+    border-bottom: 1px solid rgba($neon-yellow, 0.6);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+code {
+    background-color: $surface-2 !important;
+    border-color: $border !important;
+    color: $neon-lime;
+}
+
+// ---------- Definition lists ----------
+dt {
+    color: $neon-cyan;
+    font-weight: bold;
+}
 dd {
-    background-color: #E3DEF7;
+    background-color: rgba($neon-cyan, 0.08);
+    border-left: 2px solid $neon-cyan;
     border-radius: 5px;
-    padding: 2px;
+    padding: 2px 6px;
+}
+
+// ---------- Images & embeds ----------
+img[alt=image] {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 4px;
+    border: 1px solid rgba($neon-purple, 0.5);
+    @include glow($neon-purple, 6px);
+}
+img[alt=image-small] {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    border-radius: 4px;
+    border: 1px solid rgba($neon-purple, 0.5);
+    @include glow($neon-purple, 6px);
+}
+iframe {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    border: 1px solid $border;
+    border-radius: 4px;
+}
+
+// ---------- Buttons ----------
+@mixin neon-button($from, $to) {
+    color: #0b0b14 !important;
+    background-color: $from;
+    background-image: linear-gradient($from, $to);
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    @include glow($from);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+    &:hover {
+        @include glow($from, 14px);
+        transform: translateY(-1px);
+    }
+}
+
+.btn-purple {
+    @include neon-button($neon-magenta, $neon-purple);
 }
 
 p #back-to-top {
-    color: #fff;
-    background-color: $jtdpurple-lt;
-    background-image: linear-gradient(#6f55d5, $jtdpurple-lt);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.12);
-    border-width: 0;
-    border-radius: 4px;
+    @include neon-button($neon-magenta, $neon-purple);
     text-decoration: none;
     vertical-align: baseline;
     box-sizing: border-box;
@@ -26,127 +196,99 @@ p #back-to-top {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
-    font-weight: 500;
     line-height: 1.5;
-	position: fixed;
-	bottom: 25px;
-	right: 25px;
-
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
 }
 
-img[alt=image] {
-	width: 80%;
-	margin-right: 10%;
-	margin-left: 10%;
-	border-radius: 4px;
+// ---------- Labels ----------
+.label,
+.label-blue   { background-color: $neon-cyan !important;   color: #0b0b14 !important; @include glow($neon-cyan, 4px); }
+.label-green  { background-color: $neon-lime !important;   color: #0b0b14 !important; @include glow($neon-lime, 4px); }
+.label-purple { background-color: $neon-purple !important; color: #0b0b14 !important; @include glow($neon-purple, 4px); }
+.label-yellow { background-color: $neon-yellow !important; color: #0b0b14 !important; @include glow($neon-yellow, 4px); }
+.label-red    { background-color: $neon-red !important;    color: #0b0b14 !important; @include glow($neon-red, 4px); }
+
+// ---------- Dropdown blocks ----------
+details {
+    background-color: $surface;
+    border: 1px solid $border;
+    border-left: 3px solid $neon-purple;
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+    margin: 1rem 0;
 }
-img[alt=image-small] {
-	width: 50%;
-	margin-right: 25%;
-	margin-left: 25%;
-	border-radius: 4px;
+details[open] {
+    @include glow($neon-purple, 5px);
 }
-iframe {
-width: 90% !important;
-margin-left: 5% !important;
-margin-right: 5% !important;
-}
-h1 {
-	color: $jtdpurple;
-	font-weight: bold;	
-}
-h2 {
-	font-weight: bold;
-}
-h3 {
-	font-size: 1.2rem !important;
-	background-color: #F5F6FA;
-	font-weight: bold;
-}
-h4 {
-	font-size: 1rem !important;
-	font-weight: bold;
-}
-h5 {
-	color: $jtdpurple !important;
-}
-.highlighter {
-	background-color: #fcf2c2;
-	border-radius: 2px;	
+summary {
+    cursor: pointer;
+    color: $neon-purple;
 }
 
-.task {
-    background: rgba($purple-000, 0.2);
-    border-left: $border-radius solid $purple-300;
-    border-radius: $border-radius;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-    padding: .8rem;
+// ---------- Callouts ----------
+// {:.highlight} on a paragraph (code blocks also use .highlight, so scope to p)
+p.highlight {
+    background-color: rgba($neon-yellow, 0.08) !important;
+    border: 1px solid rgba($neon-yellow, 0.4);
+    border-radius: 4px;
+    padding: 0.8rem;
+    color: $text;
 }
 
-.task::before {
-    color: $purple-300;
-    content: "Task";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: .75em;
-    padding-bottom: .125rem;
+@mixin callout($color, $label) {
+    background: rgba($color, 0.08);
+    border: 1px solid rgba($color, 0.35);
+    border-left: 4px solid $color;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba($color, 0.15);
+    padding: 0.8rem;
+
+    &::before {
+        color: $color;
+        content: $label;
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.75em;
+        padding-bottom: 0.125rem;
+        @include text-glow($color);
+    }
 }
 
-.warn {
-    background: rgba($red-000, 0.2);
-    border-left: $border-radius solid $red-300;
-    border-radius: $border-radius;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-    padding: .8rem;
-}
-
-.warn::before {
-    color: $red-300;
-    content: "Warning";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: .75em;
-    padding-bottom: .125rem;
-}
-
-.imp {
-    background: rgba($blue-000, 0.2);
-    border-left: $border-radius solid $blue-300;
-    border-radius: $border-radius;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
-    padding: .8rem;
-}
-
-.imp::before {
-    color: $blue-300;
-    content: "Important";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: .75em;
-    padding-bottom: .125rem;
-}
+.task { @include callout($neon-lime, "Task"); }
+.warn { @include callout($neon-red,  "Warning"); }
+.imp  { @include callout($neon-cyan, "Important"); }
 
 blockquote.task, blockquote.warn, blockquote.imp {
-  margin-left: 0;
-  margin-right: 0;
-  
-  > p:first-child {
-    margin-top: 0;
-  }
-    
-  > p:last-child {
-    margin-bottom: 0;
-  }
+    margin-left: 0;
+    margin-right: 0;
+
+    > p:first-child { margin-top: 0; }
+    > p:last-child  { margin-bottom: 0; }
 }
 
 blockquote {
-	color: #67656c !important;
-	font-size: 0.775rem !important;
+    color: $text-muted !important;
+    font-size: 0.775rem !important;
+    border-left-color: $neon-purple !important;
 }
 
+// ---------- Tables ----------
+.table-wrapper {
+    @include glow($neon-cyan, 3px);
+}
+th, td {
+    background-color: $surface !important;
+    border-color: $border !important;
+}
+th {
+    color: $neon-cyan;
+}
+
+// ---------- Layout (unchanged) ----------
 @media (min-width: 50rem) {
     .side-bar {
         width: 13rem !important;
@@ -161,9 +303,9 @@ blockquote {
     .main-content-wrap {
         padding-top: 0rem !important;
     }
-a.nav-list-link {
-	font-size: 0.7rem !important;
-}
+    a.nav-list-link {
+        font-size: 0.7rem !important;
+    }
 }
 
 @media (min-width: 66.5rem) {
@@ -172,16 +314,9 @@ a.nav-list-link {
         min-width: 13rem !important;
     }
     .side-bar + .main {
-	margin-left: max((100% - 66.5rem) / 2 + 13rem) !important;
+        margin-left: max((100% - 66.5rem) / 2 + 13rem) !important;
     }
     .site-nav, .site-header, .site-footer {
         width: 13rem !important;
     }
 }
-
-
-
-
-
-
-
