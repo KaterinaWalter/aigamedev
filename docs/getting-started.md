@@ -4,7 +4,7 @@ title: "Getting Started"
 nav_order: 0
 ---
 
-# Course Information
+# Getting Started
 {: .no_toc }
 
 ## Table of Contents
