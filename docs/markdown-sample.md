@@ -35,7 +35,7 @@ Always put the alt-text as `image` so it follows the formatting I set up in SASS
 
 ### Buttons
 GitHub Flavored Markdown does not support the button element, so you’ll have to use inline HTML for this:
-<button type="button" name="button" class="btn-purple">Button element</button>
+<button type="button" name="button" class="btn">Button element</button>
 
 ### Dropdown Block
 <html>
