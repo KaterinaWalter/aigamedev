@@ -11,7 +11,7 @@ $text:        #e6e6f0;
 $text-muted:  #9a9ab8;
 
 $neon-magenta: #ff2bd6;
-$surface-2:   mix($neon-magenta, $bg, 22%);   // raised blocks (h3 bars, dd, inline code) — hot pink tint
+$surface-2:   mix($neon-magenta, $bg, 7%);   // raised blocks (h3 bars, dd, inline code) — hot pink tint
 $neon-cyan:    #00f0ff;
 $neon-lime:    #39ff14;
 $neon-yellow:  #ffe600;
@@ -131,7 +131,7 @@ code {
 
 // ---------- Definition lists ----------
 dt {
-    color: $neon-cyan;
+    color: $neon-magenta;
     font-weight: bold;
 }
 dd {
