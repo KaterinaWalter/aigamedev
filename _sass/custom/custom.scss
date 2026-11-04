@@ -1,6 +1,5 @@
 // ==========================================================
 //  NEON ARCADE THEME — custom.scss for Just the Docs
-//  Pair with `color_scheme: dark` in _config.yml
 // ==========================================================
 
 // ---------- Palette ----------
@@ -108,7 +107,7 @@ h3 {
 h4 {
     font-size: 1rem !important;
     font-weight: bold;
-    color: $neon-lime;
+    color: $neon-purple;
 }
 h5 {
     color: $neon-cyan !important;
@@ -126,7 +125,7 @@ h5 {
 code {
     background-color: $surface-2 !important;
     border-color: $border !important;
-    color: $neon-lime;
+    color: $neon-purple;
 }
 
 // ---------- Definition lists ----------
