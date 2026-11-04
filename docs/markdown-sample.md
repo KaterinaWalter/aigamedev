@@ -42,13 +42,15 @@ GitHub Flavored Markdown does not support the button element, so you’ll have t
   <details>
     <summary><strong>DROPDOWN BLOCK TITLE</strong></summary>
     Dropdown inner text or callout goes here.
-</details>
+  </details>
 </html>
 
 ### Definition Lists
 
 Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler.
 
+<html>
+  <div>
 <dl>
   <dt>Name</dt>
   <dd>Godzilla</dd>
@@ -59,6 +61,8 @@ Definition lists require HTML syntax and aren’t supported with the GitHub Flav
   <dt>Color</dt>
   <dd>Green</dd>
 </dl>
+  </div>
+</html>
 
 ### Labels
 Default label
@@ -109,7 +113,7 @@ Use **highlights** for short notes that need visual attention. Highlights show u
 
 ### Tasks/Action Items
 
-<div class="warn" markdown="block">
+<div class="task" markdown="block">
 
 This is an example task block.  
 
