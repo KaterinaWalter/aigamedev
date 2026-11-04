@@ -1,16 +1,17 @@
 // ==========================================================
 //  NEON ARCADE THEME — custom.scss for Just the Docs
+//  Pair with `color_scheme: dark` in _config.yml
 // ==========================================================
 
 // ---------- Palette ----------
 $bg:          #0b0b14;   // page background
 $surface:     #12121f;   // sidebar / cards
-$surface-2:   #1a1a2e;   // raised blocks (h3 bars, dd)
 $border:      #2a2a45;
 $text:        #e6e6f0;
 $text-muted:  #9a9ab8;
 
 $neon-magenta: #ff2bd6;
+$surface-2:   mix($neon-magenta, $bg, 22%);   // raised blocks (h3 bars, dd, inline code) — hot pink tint
 $neon-cyan:    #00f0ff;
 $neon-lime:    #39ff14;
 $neon-yellow:  #ffe600;
@@ -98,7 +99,7 @@ h2 {
 h3 {
     font-size: 1.2rem !important;
     background-color: $surface-2;
-    border-left: 3px solid $neon-cyan;
+    border-left: 3px solid $neon-magenta;
     padding: 0.25rem 0.6rem;
     border-radius: 3px;
     font-weight: bold;
@@ -134,8 +135,8 @@ dt {
     font-weight: bold;
 }
 dd {
-    background-color: rgba($neon-cyan, 0.08);
-    border-left: 2px solid $neon-cyan;
+    background-color: $surface-2;
+    border-left: 2px solid $neon-magenta;
     border-radius: 5px;
     padding: 2px 6px;
 }
