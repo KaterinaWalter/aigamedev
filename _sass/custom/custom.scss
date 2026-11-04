@@ -129,6 +129,22 @@ code {
     color: $neon-purple;
 }
 
+// Fenced code blocks: solid surface background, no tinted fill behind the text
+div.highlighter-rouge,
+div.highlighter-rouge div.highlight,
+pre.highlight,
+figure.highlight,
+div.listingblock pre {
+    background-color: $surface !important;   // #12121F
+}
+
+pre code,
+.highlight code,
+div.highlighter-rouge code {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
 // ---------- Definition lists ----------
 dt {
     color: $neon-magenta;
