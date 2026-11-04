@@ -1,0 +1,40 @@
+title: Web Docs
+description: Course materials for Pre-AP Computer Science
+theme: just-the-docs
+
+url: https://KaterinaWalter.github.io/webdocs
+
+logo: "assets/webdocs-logo.png"
+favicon_ico: "favicon.ico"
+
+aux_links_new_tab: true
+aux_links:
+  "Blackbaud":
+    - "https://bwl.myschoolapp.com/app#login"
+  "GitHub":
+    - "https://github.com/BWL-CS"    
+  "DevDocs":
+    - "https://devdocs.io/"
+
+back_to_top: true
+back_to_top_text: "⬆️ TO TOP"
+
+kramdown:
+  parse_block_html: true
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
