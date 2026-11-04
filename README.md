@@ -1,4 +1,4 @@
-# Game Dev Prompt Library 
+# Game Dev Prompt Library 👾
 
 Independent study project for TC's TML program. FOR EDUCATIONAL USE!
 
