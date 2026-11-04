@@ -1,18 +1,14 @@
-title: Web Docs
-description: Course materials for Pre-AP Computer Science
+title: Game Dev Prompt Library
+description: AI prompts for game development
 theme: just-the-docs
 
-url: https://KaterinaWalter.github.io/webdocs
+url: https://KaterinaWalter.github.io/aigamedev
 
 logo: "assets/webdocs-logo.png"
 favicon_ico: "favicon.ico"
 
 aux_links_new_tab: true
-aux_links:
-  "Blackbaud":
-    - "https://bwl.myschoolapp.com/app#login"
-  "GitHub":
-    - "https://github.com/BWL-CS"    
+aux_links:  
   "DevDocs":
     - "https://devdocs.io/"
 
