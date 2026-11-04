@@ -24,7 +24,7 @@ nav_order: 1
 
 ## Formatting Examples
 
-Other than the typical markdown syntax, here are examples of my habits when writing pages for this website. My customized Just the Docs template has extra classes I tend to use, defined in the `custom.scss` SASS file. 
+Other than the typical markdown syntax, here are examples of my habits when writing pages for this website. This includes classes from the Just the Docs template, but also my customizations defined in the `custom.scss` SASS file. 
 
 ### Text
 <span class="highlight">highlighted text</span>
@@ -33,6 +33,10 @@ Other than the typical markdown syntax, here are examples of my habits when writ
 Always put the alt-text as `image` so it follows the formatting I set up in SASS:
 ![image](sample.png)
 
+### Buttons
+GitHub Flavored Markdown does not support the button element, so you’ll have to use inline HTML for this:
+<button type="button" name="button" class="btn-purple">Button element</button>
+
 ### Dropdown Block
 <html>
   <details>
@@ -40,6 +44,40 @@ Always put the alt-text as `image` so it follows the formatting I set up in SASS
     Dropdown inner text or callout goes here.
 </details>
 </html>
+
+### Definition Lists
+
+Definition lists require HTML syntax and aren’t supported with the GitHub Flavored Markdown compiler.
+
+<dl>
+  <dt>Name</dt>
+  <dd>Godzilla</dd>
+  <dt>Born</dt>
+  <dd>1952</dd>
+  <dt>Birthplace</dt>
+  <dd>Japan</dd>
+  <dt>Color</dt>
+  <dd>Green</dd>
+</dl>
+
+### Labels
+Default label
+{: .label }
+
+Blue label
+{: .label .label-blue }
+
+Stable
+{: .label .label-green }
+
+New release
+{: .label .label-purple }
+
+Coming soon
+{: .label .label-yellow }
+
+Deprecated
+{: .label .label-red }
 
 ---
 
