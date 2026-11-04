@@ -10,14 +10,17 @@ favicon_ico: "favicon.ico"
 
 aux_links_new_tab: true
 aux_links:  
-  "DevDocs":
-    - "https://devdocs.io/"
+  "Unity Docs":
+    - "https://docs.unity.com/en-us"
 
 back_to_top: true
 back_to_top_text: "↑ TO TOP"
 
 kramdown:
   parse_block_html: true
+
+exclude:
+  - docs/markdown-sample.md
 
 callouts_level: quiet # or loud
 callouts:
