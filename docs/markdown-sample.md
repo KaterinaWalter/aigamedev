@@ -27,7 +27,9 @@ nav_order: 1
 Other than the typical markdown syntax, here are examples of my habits when writing pages for this website. This includes classes from the Just the Docs template, but also my customizations defined in the `custom.scss` SASS file. 
 
 ### Text
-<span class="highlight">highlighted text</span>
+I often use <span class="highlight">highlighted text</span>, this class makes normal text have a yellow background. 
+
+For font colors: 
 
 ### Images
 Always put the alt-text as `image` so it follows the formatting I set up in SASS:
