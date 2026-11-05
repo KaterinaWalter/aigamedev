@@ -275,8 +275,10 @@ summary {
 .site-header .site-button {
     color: $neon-magenta !important;
 
-    svg {
-        fill: currentColor;
+    svg,
+    svg use {
+        color: $neon-magenta !important;
+        stroke: $neon-magenta !important;
         filter: drop-shadow(0 0 4px rgba($neon-magenta, 0.8));
         transition: filter 0.2s ease;
     }
@@ -285,7 +287,10 @@ summary {
         color: $neon-cyan !important;
         background-image: linear-gradient(-90deg, rgba($neon-cyan, 0.12) 0%, rgba($neon-cyan, 0) 100%) !important;
 
-        svg {
+        svg,
+        svg use {
+            color: $neon-cyan !important;
+            stroke: $neon-cyan !important;
             filter: drop-shadow(0 0 6px rgba($neon-cyan, 0.9));
         }
     }
@@ -293,6 +298,12 @@ summary {
 // Hamburger while the menu is open
 .side-bar.nav-open .site-header .site-button {
     color: $neon-cyan !important;
+
+    svg,
+    svg use {
+        color: $neon-cyan !important;
+        stroke: $neon-cyan !important;
+    }
 }
 
 // ---------- Callouts ----------
