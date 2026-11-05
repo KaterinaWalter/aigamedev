@@ -5,9 +5,6 @@ parent: "Design for Learning"
 nav_order: 3
 ---
 
-# Feedback Design
-{: .no_toc }
-
 In a good game, the world responds to everything the player does. That response is how the player learns. This page uses four of James Paul Gee's learning principles to design feedback that teaches, instead of feedback that just grades.
 
 ## Table of Contents
