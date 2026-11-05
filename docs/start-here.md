@@ -162,10 +162,9 @@ Save your filled-in version somewhere handy, like a notes app or a `PROMPTS.md` 
 
 The site is organized around how a learning game actually gets made:
 
-1. **Design for Learning:** align your learning objectives with your game mechanics *before* you build anything
-2. **Design Prompts:** use AI to brainstorm mechanics, map them to learning goals, and critique your concept
-3. **Unity 2D Prompts:** build common learning-game patterns, like branching scenarios, feedback systems, and player data logging
-4. **Worked Examples:** follow a full prompt sequence from empty project to playable prototype
+1. **Design for Learning:** align your learning objectives with your game mechanics *before* you build anything. Each page ends with a paired prompt for brainstorming, mapping, or critiquing your concept.
+2. **Unity 2D Prompts:** build common learning-game patterns, like branching scenarios, feedback systems, and player data logging
+3. **Worked Examples:** follow a full prompt sequence from empty project to playable prototype
 
 Every prompt page follows the same layout, so you always know where to look:
 
