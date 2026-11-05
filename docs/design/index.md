@@ -54,9 +54,9 @@ The frameworks come from different authors, so they use different words for rela
 
 Two pages in this section draw on James Paul Gee. His argument is simple: <span class="highlighter">good video games already use good learning principles.</span> If nobody could learn a game, nobody would buy it, and players won't accept games that are easy, dumbed down, or short. So commercial games have had to get very good at teaching hard, long, complex things in a way people enjoy.
 
-He also pushes back on the idea that "all you learn from a game is how to play the game." A field like biology isn't just a set of facts. It's a "game" that biologists play, with its own activities, tools, language, and rules. Learning biology *should* mean learning to play that game. This lines up closely with Squire's argument on the [Aligning Objectives]({% link docs/aligning-objectives.md %}) page.
+He also pushes back on the idea that "all you learn from a game is how to play the game." A field like biology isn't just a set of facts. It's a "game" that biologists play, with its own activities, tools, language, and rules. Learning biology *should* mean learning to play that game. This lines up closely with Squire's argument on the [Aligning Objectives]({% link docs/design/aligning-objectives.md %}) page.
 
-Gee lists 16 principles in total. This site covers nine of them, split across [Feedback Design]({% link docs/feedback-design.md %}) and [Scaffolding & Difficulty]({% link docs/scaffolding-difficulty.md %}).
+Gee lists 16 principles in total. This site covers nine of them, split across [Feedback Design]({% link docs/design/feedback-design.md %}) and [Scaffolding & Difficulty]({% link docs/design/scaffolding-difficulty.md %}).
 
 ---
 
