@@ -5,9 +5,6 @@ parent: "Design for Learning"
 nav_order: 4
 ---
 
-# Scaffolding & Difficulty
-{: .no_toc }
-
 Hard games aren't a problem. Hard games in the *wrong order* are. This page uses James Paul Gee's learning principles to plan how a learning game gets harder: which problems come first, when to add new ones, and how much support to give the player along the way.
 
 ## Table of Contents
