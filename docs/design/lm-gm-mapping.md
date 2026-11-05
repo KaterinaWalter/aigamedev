@@ -5,9 +5,6 @@ parent: "Design for Learning"
 nav_order: 2
 ---
 
-# LM-GM Mapping
-{: .no_toc }
-
 MDA helps you think about the *experience* of a game. The **Learning Mechanics–Game Mechanics (LM-GM)** model gets more granular: it links each thing the player does to the learning it supports. Use it to check a design (or analyze an existing game) and find the spots where gameplay and pedagogy actually connect, and the spots where they don't.
 
 ## Table of Contents
