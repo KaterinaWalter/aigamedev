@@ -5,9 +5,6 @@ parent: "Design for Learning"
 nav_order: 5
 ---
 
-# Designing for Attitude & Behavior Change
-{: .no_toc }
-
 Some learning games aren't trying to teach a skill. They're trying to shift how players *think or act*: reducing bias, encouraging healthy habits, building empathy. This page covers Kaufman, Flanagan, and Seidman's **Embedded Design** model, which shows why games that announce their message often fail, and what to do instead.
 
 ## Table of Contents
