@@ -5,9 +5,6 @@ parent: "Design for Learning"
 nav_order: 1
 ---
 
-# Aligning Objectives with Mechanics
-{: .no_toc }
-
 A good learning game doesn't wrap content in a game. The thing the player *does*, over and over, is the thing they're learning. This page covers two frameworks for designing that way: Squire's idea of games as designed experience, and MDA (Mechanics, Dynamics, Aesthetics) with LeBlanc's 8 kinds of fun.
 
 ## Table of Contents
