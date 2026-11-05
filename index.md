@@ -66,7 +66,7 @@ This site assumes some programming experience. New to coding or Unity? The [Star
 
 ---
 
-## 🌱 Contribute
+## 🌱 Contribute <span class="label label-yellow">Coming soon</span>
 
 Found a prompt that worked well? Fixed a tricky bug? Share it so the next person doesn't have to figure it out from scratch. This library gets better every time someone adds to it.
 
