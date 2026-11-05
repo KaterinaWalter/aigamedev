@@ -38,7 +38,7 @@ This site assumes some programming experience. New to coding or Unity? The [Star
   <dd>Common learning-game patterns: branching scenarios, feedback systems, drag-and-drop sorting, hints, and player data logging.</dd>
   <dt>🛠️ Worked Examples <span class="label label-yellow">Coming soon</span></dt>
   <dd>Full prompt sequences that take you from an empty project to a playable prototype.</dd>
-  <dt>📚 Resources <span class="label label-yellow">Coming soon</span></dt>
+  <dt>📚 Resources <span class="label label-green">Live</span></dt>
   <dd>Reading list, glossary, free assets, and more learning links.</dd>
 </dl>
   </div>
