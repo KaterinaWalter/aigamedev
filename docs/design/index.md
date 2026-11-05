@@ -45,6 +45,7 @@ The frameworks come from different authors, so they use different words for rela
 | **Feedback** | A game mechanic in LM-GM, and the focus of Gee's Interaction, Risk Taking, and Just in Time principles |
 | **Scaffolding** | LM-GM mechanics like Tutorial, Guidance, and Repetition, and the focus of Gee's Well-Ordered Problems and Challenge and Consolidation principles |
 | **Context vs. content** | Squire's core argument, echoed by Gee: learning a field means learning to "play its game," not memorizing its facts |
+
 ---
 
 ## 🎮 Why Gee?
