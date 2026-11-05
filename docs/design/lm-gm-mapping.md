@@ -84,13 +84,13 @@ When you map your own game, mark each row as either **learning-bearing** or a **
 
 Copy this table into your design doc and fill in one row per core player action. The first two columns come from the paper's mapping format; the last two help you spot weak links.
 
-```markdown
+
 | Game Mechanic | Implementation (what the player does) | Learning Mechanic | Thinking Skill | Learning-bearing or facilitator? |
 |:--|:--|:--|:--|:--|
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
-```
+
 
 <html>
   <details>
