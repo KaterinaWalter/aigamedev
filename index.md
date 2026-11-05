@@ -33,9 +33,7 @@ This site assumes some programming experience. New to coding or Unity? The [Star
   <dt>🚀 Start Here <span class="label label-green">Live</span></dt>
   <dd>Setup, a Unity crash course for programmers, and the context block to paste into every AI chat.</dd>
   <dt>🧠 Design for Learning <span class="label label-yellow">Coming soon</span></dt>
-  <dd>Aligning learning objectives with game mechanics, the LM-GM framework, feedback, scaffolding, and assessment.</dd>
-  <dt>✏️ Design Prompts <span class="label label-yellow">Coming soon</span></dt>
-  <dd>Prompts for brainstorming mechanics, mapping them to learning goals, and critiquing your concept.</dd>
+  <dd>Aligning learning objectives with game mechanics, feedback, scaffolding, and assessment, grounded in MDA, LeBlanc's kinds of fun, Squire, Gee, and Flanagan. Each page comes with a paired prompt for brainstorming, mapping, or critiquing your concept.</dd>
   <dt>🧩 Unity 2D Prompts <span class="label label-yellow">Coming soon</span></dt>
   <dd>Common learning-game patterns: branching scenarios, feedback systems, drag-and-drop sorting, hints, and player data logging.</dd>
   <dt>🛠️ Worked Examples <span class="label label-yellow">Coming soon</span></dt>
