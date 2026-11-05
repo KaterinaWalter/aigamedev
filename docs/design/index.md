@@ -6,9 +6,6 @@ has_children: true
 permalink: design
 ---
 
-# Design for Learning
-{: .no_toc }
-
 Before you open Unity, decide what your game teaches and how play itself does the teaching. This section gives you the frameworks for that, and each page ends with a paired prompt for using AI to apply them to your own design.
 
 ---
