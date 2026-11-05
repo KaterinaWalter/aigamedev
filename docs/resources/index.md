@@ -37,10 +37,8 @@ The sources behind the [Design for Learning]({% link docs/design/index.md %}) se
   <dd>Unity's free beginner pathway for the editor, 2D, audio, and basic scripting.</dd>
   <dt><a href="https://learn.unity.com/pathway/junior-programmer">Junior Programmer</a></dt>
   <dd>Unity's free pathway for learning C# by building small games.</dd>
-  <dt><a href="https://docs.unity3d.com/Manual/index.html">Unity Manual</a></dt>
+  <dt><a href="https://docs.unity.com/en-us">Unity Docs</a></dt>
   <dd>Official documentation for the editor and its features.</dd>
-  <dt><a href="https://docs.unity3d.com/ScriptReference/">Unity Scripting API</a></dt>
-  <dd>Official reference for every class and method. Handy for checking whether a method the AI used actually exists.</dd>
 </dl>
   </div>
 </html>
